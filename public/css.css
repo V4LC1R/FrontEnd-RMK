@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+#root{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   
+    
+    width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content{
+    position :relative;
+    z-index:3;
+}
+
+#blur-Background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.534);
+}
+/* topBar */
+#top-navigation{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    z-index: 3;
+}
+
+#navigation{
+   
+    display:flex;
+    justify-content: center;
+    padding:3px;
+    
+}
+
+#navigation h1{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 8px;
+    font-size: 22px;
+    color:white;
+    margin:0;
+    border:none;
+    background:none;
+    cursor:pointer;
+    
+}
+
+#navigation .desativado{
+    padding: 11px;
+    margin-left: 5;
+    color: rgb(255, 255, 255);
+    
+}
+#navigation .ativado{
+    margin-left: 5;
+    padding: 8px;
+    border-bottom: rgb(153, 16, 16) solid  3px ;
+    color: rgb(224, 16, 16);
+}
+
+#navigation .desativado:hover{
+    color: rgb(172, 163, 161);
+}
+/* formulário */
+
+#centralizar{
+    width: none;
+    height: 25px;
+    background-color: white;
+}
+
+#containerInputs{
+    display:flex;
+        background-color:white; 
+        width:97%; 
+        height: 35px;
+        padding:10px;
+        border-radius: 3px;
+        margin-top:10px;
+}
+#search{
+    text-align: center;
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 15%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(173, 26, 0);
+    padding: 15px;
+    width: 850px;
+    height: 115px;
+    border-radius: 3px;
+}
+
+#search label{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:21px;
+    padding:5px;
+}
+.btn-search{
+    background-color: white;
+    position: relative;
+    vertical-align: center;
+    width: 21px;
+    height: 21px;
+}
+#formSearch{
+    vertical-align: center;
+    text-align: center;
+    position: relative;
+    margin: 3px;
+    
+}
+#formSearch input{
+    padding: 5px;
+    outline: none;
+    border: none;
+    height: 21px;
+    position: relative;
+    vertical-align: center;
+    border: none;
+}

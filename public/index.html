@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.css">
+    <script src="../src/pages/util.js"></script>
+    <script src="../src/pages/global/topNav.js"></script>
+    <title>Document</title>
+</head>
+<body id="world" onload="startSite()">
+    <div id="blur-Background"></div>
+    <div id="root">
+
+    </div>
+
+
+
+<script>
+    function startSite(){
+        
+        TopNavigation()
+        byId('root').style =`
+         background-image: url(../src/assets/backgrounds/main.jpg)        
+        `;
+    }
+</script>
+<script src="../src/pages/home/index.js"></script>
+
+</body>
+</html>
